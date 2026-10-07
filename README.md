@@ -1,4 +1,5 @@
 # KICKSTARTER-CROWDFUNDING-PROJECT-ANALYSIS
+
 An Excel data analytics project analyzing Kickstarter crowdfunding projects from 2009 to 2018. The dataset covers project categories, countries, funding goals, pledged amounts, backers, and outcomes to uncover insights into success rates, funding performance, category trends, and country-level project success.
 
 
@@ -98,18 +99,21 @@ The dataset contained over 375,000 project records covering the period from 2009
 The initial assessment focused on identifying missing values, duplicate records, invalid or unusual values, and inconsistencies that could affect the accuracy of the analysis.
 
 **2. ID Validation:** The ID column was checked for missing and duplicate values to ensure that each project could be uniquely identified.
+
 Total records: 374,847
 Blank IDs: 0 
 Duplicate IDs: 0
 No missing or duplicate ID values were identified. Therefore, no changes were required to the ID column.
 
 **3. Category, Subcategory, and Country Validation:** The Category, Subcategory, and Country columns were reviewed to identify missing or blank values that could affect category-level, subcategory-level, and geographical analysis.
+
 Category: No blank values identified.
 Subcategory: No blank values identified.
 Country: No blank values identified.
 Since all three fields contained values for the project records, no records were removed or modified based on missing Category, Subcategory, or Country values.
 
 **4. Date Validation and Processing:** The Launched and Deadline columns were checked to ensure that the dates were properly formatted and suitable for analysis. The date fields were reviewed for blank values and invalid entries, and no issues were identified.
+
 To support time-based analysis, four additional columns were created from the Launched date:
 
 ### New Columns and Excel Formulas
@@ -200,6 +204,7 @@ The cleaned dataset was then used for the analysis and PivotTable stage of the p
 The first analysis examined the success rate of Kickstarter projects across different project categories. The purpose was to determine which category had the highest proportion of successful projects and to understand how the number of successful projects differed across categories.
 
 PivotTable Setup
+
 A PivotTable was created in Excel using the cleaned Kickstarter dataset.
 
 | PivotTable Area | Field |
@@ -213,7 +218,8 @@ The Category field was placed in the Rows area to group the projects by category
 
 The PivotTable contained 374,846 project records across the listed categories and states.
 
-Success Percentage Calculation: To determine the success rate for each category, the number of successful projects was compared with the total number of projects in that category.
+- Success Percentage Calculation: To determine the success rate for each category, the number of successful projects was compared with the total number of projects in that category.
+  
 Success Percentage = Successful Projects ÷ Total Projects × 100
 For example, the Dance category had 2,338 successful projects out of 3,767 total projects:
 2,338 ÷ 3,767 × 100 = 62.07%
@@ -263,6 +269,7 @@ The analysis indicates that success rates varied substantially by project catego
 The second analysis examined Kickstarter project outcomes across different countries to identify the countries with the highest number of successful projects. The purpose was to understand the geographical distribution of successful Kickstarter projects within the dataset.
 
 PivotTable Setup
+
 A PivotTable was created in Excel using the cleaned Kickstarter dataset.
 
 | PivotTable Area | Field |
@@ -325,7 +332,8 @@ The PivotTable was configured as follows:
 -	Rows: Launched Year 
 -	Columns: State 
 -	Values: Count of ID 
--	Value Display: % of Row Total 
+-	Value Display: % of Row Total
+  
 The State field was retained with all available states:
 -	Cancelled 
 -	Failed 
