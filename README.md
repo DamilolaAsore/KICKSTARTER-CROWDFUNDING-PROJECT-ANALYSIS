@@ -195,7 +195,8 @@ The cleaned dataset was then used for the analysis and PivotTable stage of the p
 
 **Analysis Question 1:**
 
-Which project category has the highest success percentage, and how many successful projects does it have?
+#### Which project category has the highest success percentage, and how many successful projects does it have?
+
 The first analysis examined the success rate of Kickstarter projects across different project categories. The purpose was to determine which category had the highest proportion of successful projects and to understand how the number of successful projects differed across categories.
 
 PivotTable Setup
@@ -253,4 +254,136 @@ This calculation was applied across all categories.
 #### Key Insight
 
 The analysis indicates that success rates varied substantially by project category. Dance had the highest proportion of successful projects in the dataset, while Technology had the lowest. The comparison also highlights the importance of considering both success percentage and absolute number of successful projects when evaluating Kickstarter project performance.
+
+
+**Analysis Question 2:**
+
+#### Which countries have the highest number of successful Kickstarter projects?
+
+The second analysis examined Kickstarter project outcomes across different countries to identify the countries with the highest number of successful projects. The purpose was to understand the geographical distribution of successful Kickstarter projects within the dataset.
+
+PivotTable Setup
+A PivotTable was created in Excel using the cleaned Kickstarter dataset.
+
+| PivotTable Area | Field |
+|---|---|
+| Rows | Country |
+| Columns | State |
+| Values | ID – Count |
+
+The Country field was placed in the Rows area to group the projects by country. The State field was placed in the Columns area to separate projects according to their outcomes, including Cancelled, Failed, Live, Successful, and Suspended.
+The ID field was added to the Values area and summarized using Count to determine the number of projects within each country and project state.
+
+#### Analysis Method
+
+-	To answer the question, the Successful column of the PivotTable was examined and compared across countries.
+-	The analysis focused on the number of successful projects, rather than success percentage. The countries were therefore compared based on their total count of projects with a Successful state.
+-	The successful project counts were then arranged from highest to lowest to identify the top five countries.
+
+### Successful Kickstarter Projects by Country
+
+| Country | Successful Projects |
+|---|---:|
+| United States | 109,298 |
+| United Kingdom | 12,067 |
+| Canada | 4,134 |
+| Australia | 2,117 |
+| Germany | 937 |
+
+
+The United States recorded the highest number of successful Kickstarter projects, with 109,298 successful projects. The United Kingdom followed with 12,067 successful projects, while Canada recorded 4,134. Australia and Germany completed the top five with 2,117 and 937 successful projects respectively.
+
+#### Analysis
+
+-	The results show a substantial difference in the number of successful Kickstarter projects across the countries represented in the analysis.
+-	The United States accounted for the largest number of successful projects by a considerable margin, with 109,298 successful projects. This was followed by the United Kingdom with 12,067, meaning that the number of successful projects recorded for the United States was substantially higher than that of the other countries in this comparison.
+-	Canada ranked third with 4,134 successful projects, followed by Australia with 2,117 and Germany with 937.
+-	The results should be interpreted as counts of successful projects, rather than evidence that projects in one country had a higher probability of success. The number of projects submitted from each country differs considerably, so a country with a larger project volume can naturally have more successful projects.
+
+#### Key Insight
+
+-	The analysis identifies the United States, United Kingdom, Canada, Australia, and Germany as the five countries with the highest numbers of successful Kickstarter projects in the dataset.
+-	The United States had by far the largest count of successful projects, while the remaining four countries recorded substantially smaller totals. This provides a clear view of where successful Kickstarter projects were most concentrated geographically within the dataset.
+-	For a more complete assessment of country-level performance, the number of successful projects could be considered alongside the total number of projects and success percentage	
+	
+
+
+
+	
+	
+**Analysis Question 3:**
+
+#### How does the success rate of Kickstarter projects change over the years?
+
+The purpose of this analysis is to examine the success rate of Kickstarter projects across different launch years. This helps identify periods where projects had higher or lower success rates and understand how project success changed over the period covered by the dataset.
+
+#### Analysis
+
+A PivotTable was used to calculate the percentage of projects that reached each Kickstarter state for every launch year.
+The PivotTable was configured as follows:
+
+-	Rows: Launched Year 
+-	Columns: State 
+-	Values: Count of ID 
+-	Value Display: % of Row Total 
+The State field was retained with all available states:
+-	Cancelled 
+-	Failed 
+-	Live 
+-	Successful 
+-	Suspended
+  
+Using % of Row Total allowed the percentage of successful projects to be calculated against the total number of projects launched in each year.
+The analysis then focused on the Successful percentage for each year.
+
+### Kickstarter Project Success Rate by Year
+
+| Launched Year | Successful |
+|---|---:|
+| 2009 | 44.28% |
+| 2010 | 44.20% |
+| 2011 | 46.40% |
+| 2012 | 43.45% |
+| 2013 | 43.23% |
+| 2014 | 31.56% |
+| 2015 | 28.01% |
+| 2016 | 33.05% |
+| 2017 | 35.16% |
+| 2018 | 0.00% |
+	
+	
+The results should be interpreted as counts of successful projects, rather than evidence that projects in one country had a higher probability of success. The number of projects submitted from each country differs considerably, so a country with a larger project volume can naturally have more successful projects.
+
+
+#### Key Insight
+
+-	The analysis identifies the United States, United Kingdom, Canada, Australia, and Germany as the five countries with the highest numbers of successful Kickstarter projects in the dataset.
+-	The United States had by far the largest count of successful projects, while the remaining four countries recorded substantially smaller totals. This provides a clear view of where successful Kickstarter projects were most concentrated geographically within the dataset.
+-	For a more complete assessment of country-level performance, the number of successful projects could be considered alongside the total number of projects and success percentage for each country. However, this analysis specifically focuses on the absolute number of successful projects.
+
+
+Key Insights
+1. Early years recorded relatively high success rates
+From 2009 to 2013, the success rate remained relatively consistent and stayed above 43%.
+•	2009: 44.28% 
+•	2010: 44.20% 
+•	2011: 46.40% 
+•	2012: 43.45% 
+•	2013: 43.23% 
+The highest success rate in the dataset's completed years was recorded in 2011 at 46.40%.
+2. Success rate declined significantly between 2013 and 2015
+A substantial decline occurred from 2013 onward.
+The success rate decreased from:
+43.23% in 2013 → 31.56% in 2014 → 28.01% in 2015
+The 2015 success rate of 28.01% was the lowest meaningful annual rate in the analysis.
+3. Success rate began to recover after 2015
+After reaching 28.01% in 2015, the success rate increased in the following two years:
+•	2016: 33.05% 
+•	2017: 35.16% 
+This indicates an increase in the proportion of projects classified as successful during this period.
+4. 2018 should not be interpreted as a normal annual result
+The PivotTable shows 0.00% for 2018. This result should not be interpreted as meaning that no Kickstarter projects were successful in 2018.
+The dataset's State information is current as of 2018-01-02, meaning 2018 does not represent a complete year of activity. Therefore, the 2018 value is not directly comparable with the completed years from 2009–2017.
+
+
 
