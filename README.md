@@ -111,3 +111,79 @@ Since all three fields contained values for the project records, no records were
 
 **4. Date Validation and Processing:** The Launched and Deadline columns were checked to ensure that the dates were properly formatted and suitable for analysis. The date fields were reviewed for blank values and invalid entries, and no issues were identified.
 To support time-based analysis, four additional columns were created from the Launched date:
+
+
+
+
+
+The formulas were filled across the dataset. The resulting date fields contained no blank values or errors. The Launched Year field showed that the projects covered the period from 2009 to 2018, which was used for the analysis of project success across years.
+
+**5. Goal Validation:** The Goal column was reviewed to ensure that project funding targets were available and suitable for analysis.
+
+Blank Goal values: 0
+Highest Goal value: $166,361,391
+Goal values equal to $0: 4 records
+
+The four projects with a $0 Goal were identified and recorded as unusual values because a zero-funding target does not provide a meaningful basis for calculating funding performance or goal completion percentage. The remaining Goal values were retained for analysis.
+
+
+
+**6. Pledged Amount Validation:** The Pledged column was reviewed for missing, negative, and zero values.
+
+Blank Pledged values: 0
+Negative Pledged values: 0
+Zero Pledged values: 51,802
+
+The zero-pledged records were further reviewed by examining their project states. The records included projects with states such as Live, Suspended, Canceled, and Failed. Since projects with no pledged funding cannot provide meaningful information for the funding performance and goal completion analysis, the 51,802 zero-pledged records were removed from the analysis dataset. All remaining Pledged values were retained for analysis.
+
+
+**7. Backers Validation:** The Backers column was reviewed to identify missing and negative values and to ensure that the number of backers was suitable for analysis.
+
+Blank Backers values: 0
+Negative Backers values: 0
+Zero Backers values: Present
+
+Zero values were retained because a project having no backers is a valid observation and does not, by itself, indicate that the data is incorrect. No records were removed or modified based on the Backers column.
+
+
+**9. State Validation:** The State column was reviewed to identify the different project outcome categories and ensure that the values were suitable for analysis.
+
+The dataset contained the following project states:
+
+Successful
+Failed
+Canceled
+Live
+Suspended
+The State values were retained because each represents a distinct project condition and can provide useful information for analyzing project outcomes. No records were removed or modified based on the State column.
+
+
+
+
+
+**10. Final Dataset Validation**
+    
+A final validation was performed after completing the cleaning and processing steps to ensure that the dataset was ready for analysis.
+The final checks confirmed that;
+
+-	374,847 records were present in the original dataset.
+-	51,802 records with zero Pledged amounts were removed.
+-	The ID column contained no blank or duplicate values.
+-	Category, Subcategory, and Country contained no blank values.
+-	The Launched and Deadline fields contained no identified blank or invalid values.
+-	The Goal column contained no blank values.
+-	The Pledged column contained no blank or negative values after cleaning.
+-	The Backers column contained no blank or negative values.
+-	The State column contained valid project outcome categories.
+
+The cleaned dataset was then used for the analysis and PivotTable stage of the project.
+
+
+##	Data Analysis and Insight
+
+**Analysis Question 1:**
+
+Which project category has the highest success percentage, and how many successful projects does it have?
+The first analysis examined the success rate of Kickstarter projects across different project categories. The purpose was to determine which category had the highest proportion of successful projects and to understand how the number of successful projects differed across categories.
+PivotTable Setup
+A PivotTable was created in Excel using the cleaned Kickstarter dataset.
