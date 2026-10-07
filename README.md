@@ -112,7 +112,19 @@ Since all three fields contained values for the project records, no records were
 **4. Date Validation and Processing:** The Launched and Deadline columns were checked to ensure that the dates were properly formatted and suitable for analysis. The date fields were reviewed for blank values and invalid entries, and no issues were identified.
 To support time-based analysis, four additional columns were created from the Launched date:
 
+### New Columns and Excel Formulas
 
+
+| New Column | Excel Formula |
+|---|---|
+| Launched Year | `=YEAR(F2)` |
+| Launched Month Name | `=TEXT(F2,"MMMM")` |
+| Launched Month Number | `=MONTH(F2)` |
+| Launched Day Name | `=TEXT(F2,"DDDD")` |
+| Deadline Year | `=YEAR(K2)` |
+| Deadline Month Name | `=TEXT(K2,"MMMM")` |
+| Deadline Month Number | `=MONTH(K2)` |
+| Deadline Day Name | `=TEXT(K2,"DDDD")` |
 
 
 
