@@ -187,3 +187,27 @@ Which project category has the highest success percentage, and how many successf
 The first analysis examined the success rate of Kickstarter projects across different project categories. The purpose was to determine which category had the highest proportion of successful projects and to understand how the number of successful projects differed across categories.
 PivotTable Setup
 A PivotTable was created in Excel using the cleaned Kickstarter dataset.
+
+
+The Category field was placed in the Rows area to group the projects by category. The State field was placed in the Columns area to separate projects according to their outcomes: Canceled, Failed, Live, Successful, and Suspended. The ID field was added to the Values area and summarized using Count. This provided the number of projects within each category and each project state.
+
+The PivotTable contained 374,846 project records across the listed categories and states.
+
+Success Percentage Calculation: To determine the success rate for each category, the number of successful projects was compared with the total number of projects in that category.
+Success Percentage = Successful Projects ÷ Total Projects × 100
+For example, the Dance category had 2,338 successful projects out of 3,767 total projects:
+2,338 ÷ 3,767 × 100 = 62.07%
+This calculation was applied across all categories.
+
+Analysis: The analysis shows considerable variation in success percentages across Kickstarter categories.
+	Dance recorded the highest success percentage at 62.07%, meaning that 2,338 of its 3,767 projects were classified as successful. This was followed by Theater at 59.88% and Comics at 54.00%.
+
+	Music recorded 24,105 successful projects, making it one of the categories with the largest number of successful projects. However, its success percentage was 48.67%, which was lower than Dance, Theater, and Comics. This demonstrates that the number of successful projects and the success percentage measure different aspects of project performance.
+
+	At the other end of the results, Technology had the lowest success percentage at 19.76%, with 6,433 successful projects out of 32,562 total projects. Journalism had a success percentage of 21.29%, while Crafts, Fashion, and Food recorded success percentages between approximately 24% and 25%.
+
+	The results therefore show that categories with a larger number of projects do not necessarily have the highest success percentage. For example, Film & Video had 23,612 successful projects, but its success percentage was 37.66%, while Dance had only 2,338 successful projects but a much higher success percentage of 62.07%.
+
+ Key Insight
+The analysis indicates that success rates varied substantially by project category. Dance had the highest proportion of successful projects in the dataset, while Technology had the lowest. The comparison also highlights the importance of considering both success percentage and absolute number of successful projects when evaluating Kickstarter project performance.
+
