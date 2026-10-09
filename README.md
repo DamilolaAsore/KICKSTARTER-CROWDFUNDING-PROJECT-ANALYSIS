@@ -326,7 +326,7 @@ The United States recorded the highest number of successful Kickstarter projects
 
 The purpose of this analysis is to examine the success rate of Kickstarter projects across different launch years. This helps identify periods where projects had higher or lower success rates and understand how project success changed over the period covered by the dataset.
 
-#### Analysis
+##### Analysis
 
 A PivotTable was used to calculate the percentage of projects that reached each Kickstarter state for every launch year.
 The PivotTable was configured as follows:
@@ -334,9 +334,10 @@ The PivotTable was configured as follows:
 -	Rows: Launched Year 
 -	Columns: State 
 -	Values: Count of ID 
--	Value Display: % of Row Total
-  
+-	Value Display: % of Row Total 
+
 The State field was retained with all available states:
+
 -	Cancelled 
 -	Failed 
 -	Live 
@@ -346,7 +347,7 @@ The State field was retained with all available states:
 Using % of Row Total allowed the percentage of successful projects to be calculated against the total number of projects launched in each year.
 The analysis then focused on the Successful percentage for each year.
 
-### Kickstarter Project Success Rate by Year
+### PivotTable Result
 
 | Launched Year | Successful |
 |---|---:|
@@ -360,40 +361,53 @@ The analysis then focused on the Successful percentage for each year.
 | 2016 | 33.05% |
 | 2017 | 35.16% |
 | 2018 | 0.00% |
-	
-	
-The results should be interpreted as counts of successful projects, rather than evidence that projects in one country had a higher probability of success. The number of projects submitted from each country differs considerably, so a country with a larger project volume can naturally have more successful projects.
 
+##### Key Insights
 
-#### Key Insight
+**1. Early years recorded relatively high success rates**
 
--	The analysis identifies the United States, United Kingdom, Canada, Australia, and Germany as the five countries with the highest numbers of successful Kickstarter projects in the dataset.
--	The United States had by far the largest count of successful projects, while the remaining four countries recorded substantially smaller totals. This provides a clear view of where successful Kickstarter projects were most concentrated geographically within the dataset.
--	For a more complete assessment of country-level performance, the number of successful projects could be considered alongside the total number of projects and success percentage for each country. However, this analysis specifically focuses on the absolute number of successful projects.
-
-
-Key Insights
-1. Early years recorded relatively high success rates
 From 2009 to 2013, the success rate remained relatively consistent and stayed above 43%.
-•	2009: 44.28% 
-•	2010: 44.20% 
-•	2011: 46.40% 
-•	2012: 43.45% 
-•	2013: 43.23% 
+
+-	2009: 44.28% 
+-	2010: 44.20% 
+-	2011: 46.40% 
+-	2012: 43.45% 
+-	2013: 43.23%
+  
 The highest success rate in the dataset's completed years was recorded in 2011 at 46.40%.
-2. Success rate declined significantly between 2013 and 2015
+
+**2. Success rate declined significantly between 2013 and 2015**
+
 A substantial decline occurred from 2013 onward.
+
 The success rate decreased from:
 43.23% in 2013 → 31.56% in 2014 → 28.01% in 2015
 The 2015 success rate of 28.01% was the lowest meaningful annual rate in the analysis.
-3. Success rate began to recover after 2015
+
+**3. Success rate began to recover after 2015**
+
 After reaching 28.01% in 2015, the success rate increased in the following two years:
-•	2016: 33.05% 
-•	2017: 35.16% 
+
+-	2016: 33.05% 
+-	2017: 35.16% 
 This indicates an increase in the proportion of projects classified as successful during this period.
-4. 2018 should not be interpreted as a normal annual result
+
+**4. 2018 should not be interpreted as a normal annual result**
+
 The PivotTable shows 0.00% for 2018. This result should not be interpreted as meaning that no Kickstarter projects were successful in 2018.
 The dataset's State information is current as of 2018-01-02, meaning 2018 does not represent a complete year of activity. Therefore, the 2018 value is not directly comparable with the completed years from 2009–2017.
+
+##### Chart Interpretation
+
+The line chart shows relatively stable success rates from 2009 to 2013, followed by a noticeable decline between 2013 and 2015.
+The lowest point occurs in 2015 at 28.01%. The rate then increases in 2016 and 2017, reaching 35.16% in 2017.
+
+##### Conclusion
+
+The analysis shows that Kickstarter project success rates varied across the years. Success rates were relatively high and stable from 2009 to 2013, reaching a high of 46.40% in 2011. The rate then declined considerably, reaching its lowest meaningful point of 28.01% in 2015, before recovering to 35.16% in 2017.
+The 2018 result of 0.00% was not used to assess the annual trend because the dataset contains an incomplete 2018 period.
+
+
 
 
 
