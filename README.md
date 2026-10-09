@@ -417,6 +417,15 @@ This indicates an increase in the proportion of projects classified as successfu
 The PivotTable shows 0.00% for 2018. This result should not be interpreted as meaning that no Kickstarter projects were successful in 2018.
 The dataset's State information is current as of 2018-01-02, meaning 2018 does not represent a complete year of activity. Therefore, the 2018 value is not directly comparable with the completed years from 2009–2017.
 
+
+
+
+![](https://github.com/DamilolaAsore/KICKSTARTER-CROWDFUNDING-PROJECT-ANALYSIS/blob/main/Kickstarter%20Pictures/Kickstarter%20Project%20Success%20Rate%20by%20Year.png)
+
+
+
+
+
 ##### Chart Interpretation
 
 The line chart shows relatively stable success rates from 2009 to 2013, followed by a noticeable decline between 2013 and 2015.
@@ -517,6 +526,11 @@ This was followed by Journalism at $2,615.79 and Art at $3,221.43.
 
 The Grand Total average was $9,121.24.
 This provides a benchmark for comparing the average pledged amount of individual categories.
+
+
+
+
+![](
 
 ### Chart Interpretation
 
