@@ -549,3 +549,28 @@ The results indicate that the level of average financial backing varies consider
 
 
 
+## Conclusion
+
+The analysis of Kickstarter crowdfunding projects from 2009 to 2018 provided insights into project success rates, country-level performance, yearly success patterns, and average pledged amounts across different categories.
+The findings revealed that Dance had the highest project success rate at 62.07%, followed by Theater at 59.88% and Comics at 54.00%. The United States recorded the highest number of successful projects, with 109,298, significantly exceeding the other countries analyzed.
+The yearly analysis showed that Kickstarter project success rates declined from the early years, reaching their lowest point between 2014 and 2015 before recovering gradually through 2017. The 2018 result was excluded from meaningful yearly comparisons because the dataset reflects project status as of January 2, 2018, making it an incomplete year.
+The analysis of average pledged amounts showed that Design recorded the highest average at $24,421.45, followed by Technology at $21,070.37 and Games at $21,043.94. Crafts had the lowest average pledged amount at $1,632.91.
+Overall, the project demonstrates how Excel can be used to clean, organize, analyze, and visualize crowdfunding data to identify patterns and differences across categories, countries, and years. These findings can help prospective project creators understand historical crowdfunding outcomes and support more informed planning decisions. However, the results describe historical patterns and do not guarantee the success of future campaigns.
+
+## Recommendations
+
+**1.	Consider categories with higher success rates:** Prospective creators may examine Dance, Theater, and Comics to understand the characteristics of categories with stronger historical success rates. However, category success rates should be considered alongside competition, project quality, audience demand, and funding requirements.
+
+**2.	Study successful campaigns in leading countries:** Since the United States recorded the highest number of successful projects, creators and researchers can investigate its crowdfunding market, audience reach, and campaign characteristics to identify potentially useful strategies.
+
+**3.	Use historical trends when planning campaigns:** The decline in success rates during 2014–2015 and subsequent recovery through 2017 highlight the importance of examining historical performance. Creators should also consider changes in market conditions and avoid assuming that past trends will continue.
+
+**4.	Evaluate funding expectations by category:** Design, Technology, and Games had the highest average pledged amounts. Creators should use these findings as a reference when researching funding potential, while recognizing that average pledged amounts can be influenced by unusually large campaigns and do not represent guaranteed funding.
+
+**5.	Set realistic funding goals:** Project creators should establish funding goals based on estimated costs, production requirements, audience demand, and available resources. They should not rely on category averages alone when deciding how much funding to request.
+
+**6.	Improve future analysis:** Further analysis could examine the relationship between funding goals and project success, compare pledged amounts between successful and unsuccessful campaigns, and investigate whether campaign duration or launch month is associated with different outcomes.
+
+In conclusion, the project demonstrates the value of data-driven decision-making in crowdfunding analysis. By combining data cleaning, PivotTables, calculations, and charts in Excel, the analysis transforms raw Kickstarter records into useful insights that can support campaign research, planning, and evaluation.
+
+
