@@ -201,7 +201,7 @@ The cleaned dataset was then used for the analysis and PivotTable stage of the p
 
 **Analysis Question 1:**
 
-#### Which project category has the highest success percentage, and how many successful projects does it have?
+## Which project category has the highest success percentage, and how many successful projects does it have?
 
 The first analysis examined the success rate of Kickstarter projects across different project categories. The purpose was to determine which category had the highest proportion of successful projects and to understand how the number of successful projects differed across categories.
 
@@ -266,7 +266,7 @@ The analysis indicates that success rates varied substantially by project catego
 
 **Analysis Question 2:**
 
-#### Which countries have the highest number of successful Kickstarter projects?
+## Which countries have the highest number of successful Kickstarter projects?
 
 The second analysis examined Kickstarter project outcomes across different countries to identify the countries with the highest number of successful projects. The purpose was to understand the geographical distribution of successful Kickstarter projects within the dataset.
 
@@ -322,7 +322,7 @@ The United States recorded the highest number of successful Kickstarter projects
 	
 **Analysis Question 3:**
 
-#### How does the success rate of Kickstarter projects change over the years?
+## How does the success rate of Kickstarter projects change over the years?
 
 The purpose of this analysis is to examine the success rate of Kickstarter projects across different launch years. This helps identify periods where projects had higher or lower success rates and understand how project success changed over the period covered by the dataset.
 
@@ -408,6 +408,107 @@ The analysis shows that Kickstarter project success rates varied across the year
 The 2018 result of 0.00% was not used to assess the annual trend because the dataset contains an incomplete 2018 period.
 
 
+
+**Analysis question 4:**
+
+## Which Kickstarter categories receive the highest average amount of money pledged by backers?
+
+#### Purpose of the Analysis
+
+The purpose of this analysis is to compare Kickstarter categories based on the average amount of money pledged by backers. This helps identify the categories where projects receive higher average financial contributions and highlights differences in funding levels across project categories.
+
+#### Analysis
+
+A PivotTable was created to calculate the average amount pledged for each Kickstarter category.
+
+### PivotTable Configuration
+
+| PivotTable Area | Field |
+|---|---|
+| Rows | Category |
+| Values | Pledged – Average |
+
+The Pledged (USD) field was changed from its default Sum calculation to Average using Value Field Settings.
+The categories were then sorted from Largest to Smallest based on the average pledged amount.
+
+### PivotTable Result
+
+| Category     | Average Pledged (USD) |
+| ------------ | --------------------: |
+| Design       |            $24,421.45 |
+| Technology   |            $21,070.37 |
+| Games        |            $21,043.94 |
+| Comics       |             $6,610.45 |
+| Film & Video |             $6,218.70 |
+| Fashion      |             $5,712.87 |
+| Food         |             $5,114.29 |
+| Theater      |             $4,006.42 |
+| Music        |             $3,911.63 |
+| Photography  |             $3,572.23 |
+| Dance        |             $3,453.81 |
+| Publishing   |             $3,390.82 |
+| Art          |             $3,221.43 |
+| Journalism   |             $2,615.79 |
+| Crafts       |             $1,632.91 |
+
+
+### Key Insights
+
+**1. Design had the highest average pledged amount**
+
+Design recorded the highest average amount pledged at $24,421.45 per project.
+This was the highest average across all 15 Kickstarter categories analyzed.
+
+**2. Technology and Games also recorded high average funding**
+
+Technology ranked second with an average pledged amount of $21,070.37, while Games ranked third with $21,043.94.
+Technology and Games were almost identical, with only $26.43 separating their average pledged amounts.
+
+**3. The top three categories were significantly higher than the remaining categories**
+
+The three highest categories were:
+
+### Top 3 Categories by Average Pledged
+
+| Category   | Average Pledged (USD) |
+| ---------- | --------------------: |
+| Design     |            $24,421.45 |
+| Technology |            $21,070.37 |
+| Games      |            $21,043.94 |
+
+The next category, Comics, had an average of $6,610.45.
+This shows a substantial difference between the top three categories and the remaining categories.
+
+**4. Comics had the highest average among the remaining categories**
+
+After Design, Technology, and Games, Comics recorded the fourth-highest average pledged amount at $6,610.45.
+It was followed by:
+
+-	Film & Video — $6,218.70 
+-	Fashion — $5,712.87 
+-	Food — $5,114.29
+  
+**5. Crafts recorded the lowest average pledged amount**
+
+Crafts had the lowest average pledged amount at $1,632.91 per project.
+This was followed by Journalism at $2,615.79 and Art at $3,221.43.
+
+**6. Overall average pledged amount**
+
+The Grand Total average was $9,121.24.
+This provides a benchmark for comparing the average pledged amount of individual categories.
+
+### Chart Interpretation
+
+The visualization clearly shows that Design, Technology, and Games stand out from the other Kickstarter categories in terms of average pledged amount.
+Design has the longest bar, confirming that it has the highest average pledged amount. Technology and Games follow closely behind.
+There is then a substantial drop to Comics, which is the fourth-highest category. Crafts has the shortest bar, representing the lowest average pledged amount.
+
+### Conclusion
+
+The analysis shows significant differences in the average amount of money pledged across Kickstarter categories. Design recorded the highest average pledged amount at $24,421.45, followed by Technology at $21,070.37 and Games at $21,043.94.
+In contrast, Crafts recorded the lowest average pledged amount at $1,632.91. The overall average pledged amount across the categories was $9,121.24.
+The results indicate that the level of average financial backing varies considerably across Kickstarter categories, with Design, Technology, and Games receiving substantially higher average pledged amounts than most other categories.
 
 
 
