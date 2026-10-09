@@ -530,7 +530,10 @@ This provides a benchmark for comparing the average pledged amount of individual
 
 
 
-![](
+![](https://github.com/DamilolaAsore/KICKSTARTER-CROWDFUNDING-PROJECT-ANALYSIS/blob/main/Kickstarter%20Pictures/Average%20Amount%20Pledged%20By%20Kickstarter%20Category.png)
+
+
+
 
 ### Chart Interpretation
 
