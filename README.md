@@ -248,6 +248,20 @@ This calculation was applied across all categories.
 | Journalism | 4,754 | 1,012 | 21.29% |
 | Technology | 32,562 | 6,433 | 19.76% |
 
+
+
+
+
+![](https://github.com/DamilolaAsore/KICKSTARTER-CROWDFUNDING-PROJECT-ANALYSIS/blob/main/Kickstarter%20Pictures/Kickstarter%20Success%20Percentage%20by%20Category.png)
+
+
+
+
+
+
+
+
+
 #### Analysis: The analysis shows considerable variation in success percentages across Kickstarter categories.
 
 -	Dance recorded the highest success percentage at 62.07%, meaning that 2,338 of its 3,767 projects were classified as successful. This was followed by Theater at 59.88% and Comics at 54.00%.
@@ -301,6 +315,10 @@ The ID field was added to the Values area and summarized using Count to determin
 
 
 The United States recorded the highest number of successful Kickstarter projects, with 109,298 successful projects. The United Kingdom followed with 12,067 successful projects, while Canada recorded 4,134. Australia and Germany completed the top five with 2,117 and 937 successful projects respectively.
+
+
+![](
+
 
 #### Analysis
 
