@@ -79,17 +79,17 @@ The Kickstarter dataset contains over 375,000 crowdfunding project records cover
 
 The dataset contains 11 fields.
 
-ID – Internal Kickstarter project identifier
-Name – Name of the project
-Category – Main project category
-Subcategory – Specific project type within the category
-Country – Country of the project
-Launched – Date the project was launched
-Deadline – Crowdfunding campaign deadline
-Goal – Funding amount required in USD
-Pledged – Amount pledged by backers in USD
-Backers – Number of people who supported the project
-State – Project outcome or current condition as of January 2, 2018
+- ID – Internal Kickstarter project identifier
+- Name – Name of the project
+- Category – Main project category
+- Subcategory – Specific project type within the category
+- Country – Country of the project
+- Launched – Date the project was launched
+- Deadline – Crowdfunding campaign deadline
+- Goal – Funding amount required in USD
+- Pledged – Amount pledged by backers in USD
+- Backers – Number of people who supported the project
+- State – Project outcome or current condition as of January 2, 2018
 
 
 ##	Data Cleaning and Processing
@@ -100,16 +100,17 @@ The initial assessment focused on identifying missing values, duplicate records,
 
 **2. ID Validation:** The ID column was checked for missing and duplicate values to ensure that each project could be uniquely identified.
 
-Total records: 374,847
-Blank IDs: 0 
-Duplicate IDs: 0
-No missing or duplicate ID values were identified. Therefore, no changes were required to the ID column.
+- Total records: 374,847
+- Blank IDs: 0 
+- Duplicate IDs: 0
+- No missing or duplicate ID values were identified. Therefore, no changes were required to the ID column.
 
 **3. Category, Subcategory, and Country Validation:** The Category, Subcategory, and Country columns were reviewed to identify missing or blank values that could affect category-level, subcategory-level, and geographical analysis.
 
-Category: No blank values identified.
-Subcategory: No blank values identified.
-Country: No blank values identified.
+- Category: No blank values identified.
+- Subcategory: No blank values identified.
+- Country: No blank values identified.
+  
 Since all three fields contained values for the project records, no records were removed or modified based on missing Category, Subcategory, or Country values.
 
 **4. Date Validation and Processing:** The Launched and Deadline columns were checked to ensure that the dates were properly formatted and suitable for analysis. The date fields were reviewed for blank values and invalid entries, and no issues were identified.
@@ -136,9 +137,9 @@ The formulas were filled across the dataset. The resulting date fields contained
 
 **5. Goal Validation:** The Goal column was reviewed to ensure that project funding targets were available and suitable for analysis.
 
-Blank Goal values: 0
-Highest Goal value: $166,361,391
-Goal values equal to $0: 4 records
+- Blank Goal values: 0
+- Highest Goal value: $166,361,391
+- Goal values equal to $0: 4 records
 
 The four projects with a $0 Goal were identified and recorded as unusual values because a zero-funding target does not provide a meaningful basis for calculating funding performance or goal completion percentage. The remaining Goal values were retained for analysis.
 
@@ -146,18 +147,18 @@ The four projects with a $0 Goal were identified and recorded as unusual values 
 
 **6. Pledged Amount Validation:** The Pledged column was reviewed for missing, negative, and zero values.
 
-Blank Pledged values: 0
-Negative Pledged values: 0
-Zero Pledged values: 51,802
+- Blank Pledged values: 0
+- Negative Pledged values: 0
+- Zero Pledged values: 51,802
 
 The zero-pledged records were further reviewed by examining their project states. The records included projects with states such as Live, Suspended, Canceled, and Failed. Since projects with no pledged funding cannot provide meaningful information for the funding performance and goal completion analysis, the 51,802 zero-pledged records were removed from the analysis dataset. All remaining Pledged values were retained for analysis.
 
 
 **7. Backers Validation:** The Backers column was reviewed to identify missing and negative values and to ensure that the number of backers was suitable for analysis.
 
-Blank Backers values: 0
-Negative Backers values: 0
-Zero Backers values: Present
+- Blank Backers values: 0
+- Negative Backers values: 0
+- Zero Backers values: Present
 
 Zero values were retained because a project having no backers is a valid observation and does not, by itself, indicate that the data is incorrect. No records were removed or modified based on the Backers column.
 
@@ -171,6 +172,7 @@ Failed
 Canceled
 Live
 Suspended
+
 The State values were retained because each represents a distinct project condition and can provide useful information for analyzing project outcomes. No records were removed or modified based on the State column.
 
 
@@ -281,7 +283,7 @@ A PivotTable was created in Excel using the cleaned Kickstarter dataset.
 The Country field was placed in the Rows area to group the projects by country. The State field was placed in the Columns area to separate projects according to their outcomes, including Cancelled, Failed, Live, Successful, and Suspended.
 The ID field was added to the Values area and summarized using Count to determine the number of projects within each country and project state.
 
-#### Analysis Method
+#### Analysis 
 
 -	To answer the question, the Successful column of the PivotTable was examined and compared across countries.
 -	The analysis focused on the number of successful projects, rather than success percentage. The countries were therefore compared based on their total count of projects with a Successful state.
