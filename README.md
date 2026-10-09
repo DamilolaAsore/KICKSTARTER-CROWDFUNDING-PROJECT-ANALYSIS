@@ -317,7 +317,9 @@ The ID field was added to the Values area and summarized using Count to determin
 The United States recorded the highest number of successful Kickstarter projects, with 109,298 successful projects. The United Kingdom followed with 12,067 successful projects, while Canada recorded 4,134. Australia and Germany completed the top five with 2,117 and 937 successful projects respectively.
 
 
-![](
+
+![](https://github.com/DamilolaAsore/KICKSTARTER-CROWDFUNDING-PROJECT-ANALYSIS/blob/main/Kickstarter%20Pictures/Top%205%20Countries%20by%20the%20number%20of%20successful%20projects.png)
+
 
 
 #### Analysis
