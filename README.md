@@ -63,11 +63,11 @@ The document serves as a reference for understanding how the analysis was conduc
 
 The findings from this analysis can be used by:
 
--	Kickstarter Project Creators: To understand success patterns across categories and assess funding performance when planning future crowdfunding projects.
--	Entrepreneurs and Project Planners: To identify project types and characteristics associated with successful crowdfunding outcomes.
--	Crowdfunding Analysts: To evaluate trends in project success, funding goals, pledged amounts, and backer participation.
--	Investors and Backers: To better understand project categories, funding performance, and historical success patterns when evaluating crowdfunding projects.
--	Marketing and Business Professionals: To gain insights into crowdfunding performance that can support campaign planning and engagement strategies.
+-	**Kickstarter Project Creators:** To understand success patterns across categories and assess funding performance when planning future crowdfunding projects.
+-	**Entrepreneurs and Project Planners:** To identify project types and characteristics associated with successful crowdfunding outcomes.
+-	**Crowdfunding Analysts:** To evaluate trends in project success, funding goals, pledged amounts, and backer participation.
+-	**Investors and Backers:** To better understand project categories, funding performance, and historical success patterns when evaluating crowdfunding projects.
+-	**Marketing and Business Professionals**: To gain insights into crowdfunding performance that can support campaign planning and engagement strategies.
 
 ##	Data Source
 
