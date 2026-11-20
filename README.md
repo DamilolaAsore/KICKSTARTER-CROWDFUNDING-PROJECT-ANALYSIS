@@ -549,7 +549,11 @@ The results indicate that the level of average financial backing varies consider
 
 ### Dashboard Visualization
 
-![]()
+
+![](KICKSTATER ANALYSIS DASHBOARD.png)
+
+
+
 
 ## Conclusion
 
