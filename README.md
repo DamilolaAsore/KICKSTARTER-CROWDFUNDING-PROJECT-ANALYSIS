@@ -547,7 +547,9 @@ The analysis shows significant differences in the average amount of money pledge
 In contrast, Crafts recorded the lowest average pledged amount at $1,632.91. The overall average pledged amount across the categories was $9,121.24.
 The results indicate that the level of average financial backing varies considerably across Kickstarter categories, with Design, Technology, and Games receiving substantially higher average pledged amounts than most other categories.
 
+### Dashboard Visualization
 
+![]()
 
 ## Conclusion
 
